@@ -1,0 +1,26 @@
+{
+  "name": "oldboys-e2e",
+  "version": "1.0.0",
+  "description": "check that oldboys portal is still up and running by using nightwatch e2e",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/nightwatch",
+    "test-ci": "node ./node_modules/.bin/nightwatch --monitor=ci"
+  },
+  "keywords": [
+    "nightwatch",
+    "e2e"
+  ],
+  "author": "Muzikayise Flynn Buthelezi (zuluCoda)",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.32.3",
+    "geckodriver": "^1.8.1",
+    "mocha": "^3.5.3",
+    "mocha-junit-reporter": "^1.13.0",
+    "nightwatch": "^0.9.16",
+    "phantomjs": "^2.1.7",
+    "selenium-server-standalone-jar": "^3.5.3",
+    "yargs": "^9.0.1"
+  }
+}
