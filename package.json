@@ -1,7 +1,7 @@
 {
-  "name": "oldboys-e2e",
+  "name": "zulucoda-website-monitor",
   "version": "1.0.0",
-  "description": "check that oldboys portal is still up and running by using nightwatch e2e",
+  "description": "check that all zulucoda websites and up and running",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/nightwatch",
