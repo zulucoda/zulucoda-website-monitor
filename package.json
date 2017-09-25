@@ -1,7 +1,7 @@
 {
   "name": "zulucoda-website-monitor",
   "version": "1.0.0",
-  "description": "check that all zulucoda websites and up and running",
+  "description": "check that all zulucoda websites / web apps are up and running",
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/nightwatch",
