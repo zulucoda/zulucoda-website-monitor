@@ -23,7 +23,7 @@ describe('Google demo test for Mocha ***** INTERNET CHECK ***** if test fails th
 
     it('uses BDD to run the Google simple test', function(client) {
       client
-        .url('http://google.comxxx')
+        .url('http://google.com')
         .expect.element('body').to.be.present.before(1000);
 
       client.setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
