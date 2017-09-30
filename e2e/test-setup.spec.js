@@ -24,11 +24,8 @@ describe('Google demo test for Mocha ***** INTERNET CHECK ***** if test fails th
     it('uses BDD to run the Google simple test', function(client) {
       client
         .url('http://google.com')
+        .resizeWindow(1920, 1080)
         .expect.element('body').to.be.present.before(1000);
-
-      client.setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
-        .pause(1000)
-        .assert.containsText('#main', 'Night Watch');
     });
   });
 });

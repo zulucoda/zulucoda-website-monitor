@@ -26,6 +26,7 @@ describe('Monitor mfbproject.co.za', () => {
   it('should navigate to https://mfbproject.co.za/ and check that its up', client => {
     client
       .url('https://mfbproject.co.za/')
+      .resizeWindow(1920, 1080)
       .expect.element('div#home').to.be.present.before(2000);
 
     client

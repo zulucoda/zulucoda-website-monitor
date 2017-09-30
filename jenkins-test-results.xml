@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="6.948" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2017-09-25T16:53:54" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="24.93" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2017-09-30T21:53:34" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Monitor oldboys.mfbproducts.com" timestamp="2017-09-25T16:53:54" tests="1" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/oldboys-e2e/e2e/oldboys.mfbproducts.com/monitor.spec" failures="0" time="6.948">
-    <testcase name="Monitor oldboys.mfbproducts.com should navigate to https://oldboys.mfbproducts.com and check that its up" time="6.948" classname="should navigate to https://oldboys.mfbproducts.com and check that its up">
+  <testsuite name="Monitor hsbc-ach-xml-converter.mfbproducts.com" timestamp="2017-09-30T21:53:34" tests="1" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/zulucoda-website-monitor/e2e/hsbc-ach-xml-converter.mfbproducts.com/hsbc-ach-xml-converter.monitor.spec" failures="0" time="5.593">
+    <testcase name="Monitor hsbc-ach-xml-converter.mfbproducts.com should navigate to https://hsbc-ach-xml-converter.mfbproducts.com and check that its up" time="5.593" classname="should navigate to https://hsbc-ach-xml-converter.mfbproducts.com and check that its up">
+    </testcase>
+  </testsuite>
+  <testsuite name="Monitor mfbproject.co.za" timestamp="2017-09-30T21:53:40" tests="1" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/zulucoda-website-monitor/e2e/mfbproject.co.za/mfbproject.monitor.spec" failures="0" time="3.882">
+    <testcase name="Monitor mfbproject.co.za should navigate to https://mfbproject.co.za/ and check that its up" time="3.882" classname="should navigate to https://mfbproject.co.za/ and check that its up">
+    </testcase>
+  </testsuite>
+  <testsuite name="Monitor oldboys.mfbproducts.com" timestamp="2017-09-30T21:53:44" tests="1" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/zulucoda-website-monitor/e2e/oldboys.mfbproducts.com/oldboys.monitor.spec" failures="0" time="14.627">
+    <testcase name="Monitor oldboys.mfbproducts.com should navigate to https://oldboys.mfbproducts.com and check that its up" time="14.627" classname="should navigate to https://oldboys.mfbproducts.com and check that its up">
+    </testcase>
+  </testsuite>
+  <testsuite name="Google demo test for Mocha ***** INTERNET CHECK ***** if test fails then google is down" timestamp="2017-09-30T21:53:59" tests="0" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/zulucoda-website-monitor/e2e/test-setup.spec" failures="0" time="0">
+  </testsuite>
+  <testsuite name="with Nightwatch" timestamp="2017-09-30T21:53:59" tests="1" file="/home/muzikayise/workspace/Dev/Z/zulu-coda/code/zulucoda-website-monitor/e2e/test-setup.spec" failures="0" time="0.828">
+    <testcase name="Google demo test for Mocha ***** INTERNET CHECK ***** if test fails then google is down with Nightwatch uses BDD to run the Google simple test" time="0.828" classname="uses BDD to run the Google simple test">
     </testcase>
   </testsuite>
 </testsuites>

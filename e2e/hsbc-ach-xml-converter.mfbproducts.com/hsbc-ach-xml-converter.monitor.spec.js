@@ -26,6 +26,7 @@ describe('Monitor hsbc-ach-xml-converter.mfbproducts.com', () => {
   it('should navigate to https://hsbc-ach-xml-converter.mfbproducts.com and check that its up', client => {
     client
       .url('https://hsbc-ach-xml-converter.mfbproducts.com')
+      .resizeWindow(1920, 1080)
       .expect.element('div.navbar-header').to.be.present.before(1000);
 
     client
