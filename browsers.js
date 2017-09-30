@@ -21,7 +21,7 @@ const phantom = {browserName: 'phantomjs',
   'phantomjs.cli.args': []
 };
 
-const browser = (process.env.BROWSER || 'chrome');
+const browser = (process.env.BROWSER || 'phantom');
 
 module.exports = {
   select() {
