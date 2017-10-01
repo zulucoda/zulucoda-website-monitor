@@ -34,8 +34,8 @@ describe('Monitor oldboys.mfbproducts.com', () => {
       .setValue('input#login-password', process.env.LOGIN_PASSWORD)
       .waitForElementVisible('button#login-btn', 1000)
       .click('button#login-btn')
-      .pause(20000)
-      .waitForElementVisible('div#content-header', 20000)
+      .pause(10000)
+      .waitForElementVisible('div#content-header', 10000)
       .assert.containsText('div#content-header',
       'Old Boys Directory')
       .assert.containsText('.label-default',
