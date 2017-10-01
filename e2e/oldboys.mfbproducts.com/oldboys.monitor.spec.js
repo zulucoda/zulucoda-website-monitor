@@ -22,28 +22,29 @@ describe('Monitor oldboys.mfbproducts.com', () => {
   beforeEach(function(client, done) {
     done();
   });
-
+  
   it('should navigate to https://oldboys.mfbproducts.com and check that its up', client => {
 
     console.log('user', process.env.LOGIN_USERNAME);
     console.log('pass', process.env.LOGIN_PASSWORD);
 
     client
-    .url('https://oldboys.mfbproducts.com')
-      .pause(5000)
+      .url('https://oldboys.mfbproducts.com')
       .resizeWindow(1920, 1080)
-      .clearValue("input#login-username")
-      .clearValue("input#login-password")
-      .setValue('input#login-username', process.env.LOGIN_USERNAME)
-      .setValue('input#login-password', process.env.LOGIN_PASSWORD)
-      .waitForElementVisible('button#login-btn', 1000)
+      .expect.element('div#login h3').to.be.present.before(1000);
+
+    client.setValue('input#login-username', process.env.LOGIN_USERNAME);
+    client.setValue('input#login-password', process.env.LOGIN_PASSWORD);
+
+    client.waitForElementVisible('button#login-btn', 1000)
       .click('button#login-btn')
-      .pause(10000)
-      .waitForElementVisible('div#content-header', 10000)
+      .pause(5000)
       .assert.containsText('div#content-header',
       'Old Boys Directory')
       .assert.containsText('.label-default',
-      'Attorney')
+      'Attorney');
+
+    client
       .click('.nav.navbar-nav.pull-right li a')
       .pause(5000);
 
