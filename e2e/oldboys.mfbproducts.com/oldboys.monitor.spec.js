@@ -26,6 +26,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
   it('should navigate to https://oldboys.mfbproducts.com and check that its up', client => {
     client
     .url('https://oldboys.mfbproducts.com')
+      .pause(5000)
     .resizeWindow(1920, 1080)
     .expect.element('div#login h3').to.be.present.before(1000);
 
