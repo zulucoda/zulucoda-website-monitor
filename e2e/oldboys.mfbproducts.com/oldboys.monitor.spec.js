@@ -24,6 +24,10 @@ describe('Monitor oldboys.mfbproducts.com', () => {
   });
 
   it('should navigate to https://oldboys.mfbproducts.com and check that its up', client => {
+
+    console.log('user', process.env.LOGIN_USERNAME);
+    console.log('pass', process.env.LOGIN_PASSWORD);
+
     client
     .url('https://oldboys.mfbproducts.com')
       .pause(5000)
