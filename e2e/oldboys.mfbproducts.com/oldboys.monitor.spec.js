@@ -30,9 +30,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
     .resizeWindow(1920, 1080)
     .expect.element('div#login h3').to.be.present.before(1000);
 
-    client.waitForElementVisible('button#login-btn', 1000)
-      .click('button#login-btn')
-      .assert.containsText('.alert.alert-danger', 'Oh snap!')
+    client
       .clearValue("input#login-username")
       .clearValue("input#login-password")
       .setValue('input#login-username', process.env.LOGIN_USERNAME)
