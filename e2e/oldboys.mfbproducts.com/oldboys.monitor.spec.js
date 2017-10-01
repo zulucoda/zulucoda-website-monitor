@@ -22,7 +22,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
   beforeEach(function(client, done) {
     done();
   });
-  
+
   it('should navigate to https://oldboys.mfbproducts.com and check that its up', client => {
 
     console.log('user', process.env.LOGIN_USERNAME);
@@ -33,8 +33,8 @@ describe('Monitor oldboys.mfbproducts.com', () => {
       .resizeWindow(1920, 1080)
       .expect.element('div#login h3').to.be.present.before(1000);
 
-    client.setValue('input#login-username', process.env.LOGIN_USERNAME);
-    client.setValue('input#login-password', process.env.LOGIN_PASSWORD);
+    client.clearValue("input#login-username").setValue('input#login-username', process.env.LOGIN_USERNAME);
+    client.clearValue("input#login-username").setValue('input#login-password', process.env.LOGIN_PASSWORD);
 
     client.waitForElementVisible('button#login-btn', 1000)
       .click('button#login-btn')
