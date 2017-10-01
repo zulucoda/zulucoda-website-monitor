@@ -34,7 +34,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
       .expect.element('div#login h3').to.be.present.before(1000);
 
     client.clearValue("input#login-username").setValue('input#login-username', process.env.LOGIN_USERNAME);
-    client.clearValue("input#login-username").setValue('input#login-password', process.env.LOGIN_PASSWORD);
+    client.clearValue("input#login-password").setValue('input#login-password', process.env.LOGIN_PASSWORD);
 
     client.waitForElementVisible('button#login-btn', 1000)
       .click('button#login-btn')
