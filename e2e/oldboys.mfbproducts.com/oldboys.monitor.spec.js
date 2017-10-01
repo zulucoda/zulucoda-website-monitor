@@ -38,7 +38,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
 
     client.waitForElementVisible('button#login-btn', 1000)
       .click('button#login-btn')
-      .pause(5000)
+      .pause(10000)
       .assert.containsText('div#content-header',
       'Old Boys Directory')
       .assert.containsText('.label-default',
