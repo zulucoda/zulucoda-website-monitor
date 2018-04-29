@@ -40,9 +40,7 @@ describe('Monitor oldboys.mfbproducts.com', () => {
       .click('button#login-btn')
       .pause(5000)
       .assert.containsText('div#content-header',
-      'Old Boys Directory')
-      .assert.containsText('.label-default',
-      'Attorney');
+      'Old Boys Directory');
 
     client
       .click('.nav.navbar-nav.pull-right li a')
